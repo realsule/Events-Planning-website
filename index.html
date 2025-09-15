@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Planning Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Your Event Services</h1>
+      <nav>
+        <a href="#primary-services">Primary Services</a>
+        <a href="#special-services">Special Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Professional Event Planning</h2>
+      <p>We handle everything from concept to execution — ensuring your events are seamless and memorable.</p>
+      <a href="#contact" class="cta-btn">Contact Us Today</a>
+    </div>
+  </section>
+
+  <section id="primary-services" class="services container">
+    <h2>Primary Services</h2>
+    <div class="service-card">
+      <h3> Event Concept & Design</h3>
+      <ul>
+        <li>Theme and concept development</li>
+        <li>Branding and color schemes</li>
+        <li>Mood boards or visual mockups</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h3> Venue & Logistics</h3>
+      <ul>
+        <li>Venue scouting and booking</li>
+        <li>Seating arrangements & layout planning</li>
+        <li>Transportation & parking management</li>
+        <li>Permits and legal requirements</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h3> Decor & Ambience</h3>
+      <ul>
+        <li>Flowers, centerpieces, and props</li>
+        <li>Lighting and stage setup</li>
+        <li>Draping, tents, and table linens</li>
+        <li>Signage and banners</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h3> Guest Management</h3>
+      <ul>
+        <li>Invitations and RSVPs</li>
+        <li>Seating charts and guest lists</li>
+        <li>Check-in systems or registration desks</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h3> Staffing & Coordination</h3>
+      <ul>
+        <li>Event coordinator / manager</li>
+        <li>On-site staff: servers, ushers, security</li>
+        <li>Volunteers or assistants</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h3> Safety & Contingency Planning</h3>
+      <ul>
+        <li>Emergency plans and first aid</li>
+        <li>Backup suppliers for catering, AV, or tents</li>
+        <li>Insurance and liability coverage</li>
+      </ul>
+    </div>
+  </section>
+  
+  <section id="special-services" class="services container">
+    <h2>Special Services</h2>
+    <div class="service-card">
+      <h3> Catering & Beverages</h3>
+      <ul>
+        <li>Meal planning (buffet, plated, cocktail, etc.)</li>
+        <li>Specialty dietary requirements</li>
+        <li>Beverage stations & bar services</li>
+        <li>Menu tastings</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h3> Audio-Visual & Media</h3>
+      <ul>
+        <li>Sound systems, microphones, speakers</li>
+        <li>Projectors, screens, and displays</li>
+        <li>Photography & videography</li>
+        <li>Live streaming or media coverage</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h3> Entertainment & Activities</h3>
+      <ul>
+        <li>DJs, bands, performers, MCs</li>
+        <li>Games or interactive activities</li>
+        <li>Guest speakers or workshops</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h3> Special Services</h3>
+      <ul>
+        <li>Grooming & makeup for participants</li>
+        <li>Transportation or shuttle services</li>
+        <li>Hearse services (if applicable)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact container">
+    <h2>Contact Us</h2>
+    <p>Reach out today to discuss your event needs. We’ll make it happen!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Phone Number" required>
+      <textarea placeholder="Event Details" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: yourname@example.com | Phone: +254 700 000000</p>
+  </section>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Your Event Services — All rights reserved
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().ge
