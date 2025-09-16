@@ -1,142 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Event Planning Services</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elegant Events — Event Planning Services</title>
+
+  <!-- Google font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Hk5fV3FURi6I7u3s5FzQk0t2M3e4f1qF1nq2C1f3w8R3s2Hk5g6Jm8V9kjz4xwZ1G2Y3f4d5k6l7m8n9oQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Site stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Your Event Services</h1>
-      <nav>
-        <a href="#primary-services">Primary Services</a>
-        <a href="#special-services">Special Services</a>
-        <a href="#contact">Contact</a>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Logo (left) -->
+      <a href="#" class="logo" aria-label="Elegant Events Home">
+        <!-- Replace text with an SVG or <img> if you have a logo file -->
+        <span class="logo-mark">EE</span>
+        <span class="logo-text">Elegant Events</span>
+      </a>
+
+      <!-- Mobile menu toggle -->
+      <button class="nav-toggle" id="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <!-- Navigation (right) -->
+      <nav id="primaryNav" class="primary-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#About">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#clients">Clients</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Professional Event Planning</h2>
-      <p>We handle everything from concept to execution — ensuring your events are seamless and memorable.</p>
-      <a href="#contact" class="cta-btn">Contact Us Today</a>
-    </div>
-  </section>
+  <!-- ===== MAIN ===== -->
+  <main>
+    <!-- Hero / Intro -->
+    <section class="hero container">
+      <div class="hero-content">
+        <h1>We Plan & Run Your Conferences and Events</h1>
+        <p>From intimate celebrations to large-scale brand activationswe plan, design and execute with precision and elegance.</p>
+        <a href="#services" class="btn btn-primary">Our Services</a>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <!-- Decorative placeholder -->
+        <img src="https://via.placeholder.com/720x480?text=Elegant+Event+Image" alt="" />
+      </div>
+    </section>
 
-  <section id="primary-services" class="services container">
-    <h2>Primary Services</h2>
-    <div class="service-card">
-      <h3> Event Concept & Design</h3>
-      <ul>
-        <li>Theme and concept development</li>
-        <li>Branding and color schemes</li>
-        <li>Mood boards or visual mockups</li>
-      </ul>
-    </div>
-    <div class="service-card">
-      <h3> Venue & Logistics</h3>
-      <ul>
-        <li>Venue scouting and booking</li>
-        <li>Seating arrangements & layout planning</li>
-        <li>Transportation & parking management</li>
-        <li>Permits and legal requirements</li>
-      </ul>
-    </div>
-    <div class="service-card">
-      <h3> Decor & Ambience</h3>
-      <ul>
-        <li>Flowers, centerpieces, and props</li>
-        <li>Lighting and stage setup</li>
-        <li>Draping, tents, and table linens</li>
-        <li>Signage and banners</li>
-      </ul>
-    </div>
-    <div class="service-card">
-      <h3> Guest Management</h3>
-      <ul>
-        <li>Invitations and RSVPs</li>
-        <li>Seating charts and guest lists</li>
-        <li>Check-in systems or registration desks</li>
-      </ul>
-    </div>
-    <div class="service-card">
-      <h3> Staffing & Coordination</h3>
-      <ul>
-        <li>Event coordinator / manager</li>
-        <li>On-site staff: servers, ushers, security</li>
-        <li>Volunteers or assistants</li>
-      </ul>
-    </div>
-    <div class="service-card">
-      <h3> Safety & Contingency Planning</h3>
-      <ul>
-        <li>Emergency plans and first aid</li>
-        <li>Backup suppliers for catering, AV, or tents</li>
-        <li>Insurance and liability coverage</li>
-      </ul>
-    </div>
-  </section>
-  
-  <section id="special-services" class="services container">
-    <h2>Special Services</h2>
-    <div class="service-card">
-      <h3> Catering & Beverages</h3>
-      <ul>
-        <li>Meal planning (buffet, plated, cocktail, etc.)</li>
-        <li>Specialty dietary requirements</li>
-        <li>Beverage stations & bar services</li>
-        <li>Menu tastings</li>
-      </ul>
-    </div>
-    <div class="service-card">
-      <h3> Audio-Visual & Media</h3>
-      <ul>
-        <li>Sound systems, microphones, speakers</li>
-        <li>Projectors, screens, and displays</li>
-        <li>Photography & videography</li>
-        <li>Live streaming or media coverage</li>
-      </ul>
-    </div>
-    <div class="service-card">
-      <h3> Entertainment & Activities</h3>
-      <ul>
-        <li>DJs, bands, performers, MCs</li>
-        <li>Games or interactive activities</li>
-        <li>Guest speakers or workshops</li>
-      </ul>
-    </div>
-    <div class="service-card">
-      <h3> Special Services</h3>
-      <ul>
-        <li>Grooming & makeup for participants</li>
-        <li>Transportation or shuttle services</li>
-        <li>Hearse services (if applicable)</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Services grid -->
+    <section id="services" class="services container">
+      <header class="section-header">
+        <h2>Services</h2>
+        <p>Comprehensive event planning and production services tailored to your needs.</p>
+      </header>
 
-  <section id="contact" class="contact container">
-    <h2>Contact Us</h2>
-    <p>Reach out today to discuss your event needs. We’ll make it happen!</p>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <input type="text" placeholder="Phone Number" required>
-      <textarea placeholder="Event Details" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p>Email: yourname@example.com | Phone: +254 700 000000</p>
-  </section>
+      <!-- Services list (grid) -->
+      <div class="services-grid">
+        <!-- Note: copy/paste the card block to add more services -->
+        <article class="service-card">
+          <figure class="service-media">
+            <img src="https://via.placeholder.com/600x400?text=Weddings" alt="Weddings example placeholder" />
+          </figure>
+          <div class="service-body">
+            <h3><i class="fa-solid fa-ring"></i> Weddings</h3>
+            <p>Bespoke wedding planning — venue sourcing, design, coordination and day-of management for a flawless celebration.</p>
+          </div>
+        </article>
 
-  <footer>
-    <div class="container">
-      © <span id="year"></span> Your Event Services — All rights reserved
+        <article class="service-card">
+          <figure class="service-media">
+            <img src="https://via.placeholder.com/600x400?text=Corporate+Events" alt="Corporate events placeholder" />
+          </figure>
+          <div class="service-body">
+            <h3><i class="fa-solid fa-briefcase"></i> Corporate Events</h3>
+            <p>Corporate conferences, client receptions and team-building experiences designed to achieve your objectives.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <figure class="service-media">
+            <img src="https://via.placeholder.com/600x400?text=Meetings+%26+Conferences" alt="Meetings and conferences placeholder" />
+          </figure>
+          <div class="service-body">
+            <h3><i class="fa-solid fa-chalkboard-user"></i> Meetings &amp; Conferences</h3>
+            <p>Full production and logistical support to make meetings impactful — AV, staging, attendee experience and more.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <figure class="service-media">
+            <img src="https://via.placeholder.com/600x400?text=Product+Launches" alt="Product launches placeholder" />
+          </figure>
+          <div class="service-body">
+            <h3><i class="fa-solid fa-rocket"></i> Product Launches</h3>
+            <p>Launch strategy and immersive events that create buzz and amplify your product's story.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <figure class="service-media">
+            <img src="https://via.placeholder.com/600x400?text=Award+Nights+%26+Gala+Dinners" alt="Award nights placeholder" />
+          </figure>
+          <div class="service-body">
+            <h3><i class="fa-solid fa-trophy"></i> Award Nights &amp; Gala Dinners</h3>
+            <p>Elegant gala design, run-of-show, guest management and bespoke décor to celebrate excellence.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <figure class="service-media">
+            <img src="https://via.placeholder.com/600x400?text=Birthdays" alt="Birthdays placeholder" />
+          </figure>
+          <div class="service-body">
+            <h3><i class="fa-solid fa-cake-candles"></i> Birthdays</h3>
+            <p>Personalized birthday experiences for all ages — themed décor, entertainment and event coordination.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <figure class="service-media">
+            <img src="https://via.placeholder.com/600x400?text=Concerts" alt="Concerts placeholder" />
+          </figure>
+          <div class="service-body">
+            <h3><i class="fa-solid fa-music"></i> Concerts</h3>
+            <p>Live event production — staging, sound, lighting and artist logistics for memorable performances.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <figure class="service-media">
+            <img src="https://via.placeholder.com/600x400?text=Receptions+%26+Decorations" alt="Receptions and decorations placeholder" />
+          </figure>
+          <div class="service-body">
+            <h3><i class="fa-solid fa-seedling"></i> Receptions &amp; Decorations</h3>
+            <p>Creative décor, floral design and atmosphere curation to set the tone for your event.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <figure class="service-media">
+            <img src="https://via.placeholder.com/600x400?text=Baby+Showers" alt="Baby showers placeholder" />
+          </figure>
+          <div class="service-body">
+            <h3><i class="fa-solid fa-baby"></i> Baby Showers</h3>
+            <p>Sweet, thoughtful and stress-free baby shower planning — themes, games and gift coordination.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <figure class="service-media">
+            <img src="https://via.placeholder.com/600x400?text=Brand+Activation" alt="Brand activation placeholder" />
+          </figure>
+          <div class="service-body">
+            <h3><i class="fa-solid fa-bullhorn"></i> Brand Activation</h3>
+            <p>Strategic activations and experiential marketing that grow brand awareness and customer engagement.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <figure class="service-media">
+            <img src="https://via.placeholder.com/600x400?text=Funerals" alt="Funerals placeholder" />
+          </figure>
+          <div class="service-body">
+            <h3><i class="fa-solid fa-cross"></i> Funerals</h3>
+            <p>Compassionate, dignified planning and coordination during sensitive times, handled respectfully and professionally.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Projects placeholder -->
+    <section id="projects" class="projects container">
+      <header class="section-header">
+        <h2>Projects</h2>
+        <p>Selected past projects and case studies — coming soon. (Replace with gallery or project cards.)</p>
+      </header>
+      <!-- Minimal placeholder -->
+      <div class="placeholder">Project gallery or case studies can be placed here.</div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="contact container">
+      <header class="section-header">
+        <h2>Contact</h2>
+        <p>Let’s plan something beautiful. Reach out for a tailored proposal.</p>
+      </header>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Email:</strong> <a href="mailto:hello@elegantevents.example">hello@elegantevents.example</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+          <p><strong>Location:</strong> Nairobi, Kenya</p>
+
+          <div class="social-links" aria-label="Social links">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#" method="post" aria-label="Contact form (demo)">
+          <label>
+            <span class="label-text">Name</span>
+            <input type="text" name="name" placeholder="Your full name" required />
+          </label>
+
+          <label>
+            <span class="label-text">Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+
+          <label>
+            <span class="label-text">Message</span>
+            <textarea name="message" rows="5" placeholder="Tell us about your event…" required></textarea>
+          </label>
+
+          <button class="btn btn-secondary" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <small>&copy; <span id="year"></span> Elegant Events. All rights reserved.</small>
+      </div>
+      <div class="footer-right">
+        <span>Contact: <a href="mailto:hello@elegantevents.example">hello@elegantevents.example</a> | +1 (234) 567-890</span>
+      </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().ge
+  <!-- Minimal JS for mobile nav and small interactions -->
+  <script src="script.js"></script>
+</body>
+</html>
+
