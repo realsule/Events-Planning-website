@@ -39,6 +39,7 @@ body{
   width: min(var(--container-md), 94%);
   max-width: var(--max-w);
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* ---------- Header ---------- */
@@ -333,3 +334,95 @@ body{
   gap:.5rem;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.site-header.scrolled {
+  box-shadow: var(--shadow-sm);
+}
+.hamburger.open {
+  background: transparent;
+}
+.hamburger.open::before {
+  transform: rotate(45deg) translate(5px,5px);
+}
+.hamburger.open::after {
+  transform: rotate(-45deg) translate(5px,-5px);
+}
+.site-header.scrolled {
+  box-shadow: var(--shadow-sm);
+}
+.hero {
+  margin-bottom: 7rem;
+}
+/* Sub-headings inside About section */
+.about-content .subhead {
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+.services-list {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.service-item h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: var(--accent);
+}
+
+.service-item img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Swiper specifics */
+.service-swiper {
+  width: 100%;
+  border-radius: var(--radius);
+}
+.swiper-pagination-bullet {
+  background: var(--accent);
+}
+.service-item .swiper {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;       /* ensures visible area */
+  margin-top: 1rem;
+}
+.service-item .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Give the Swiper container a minimum height and background */
+.service-swiper {
+  min-height: 250px;          /* adjust to desired rectangle height */
+  background: #eee;           /* light gray placeholder background */
+  border: 1px dashed #ccc;    /* optional dashed border for clarity */
+}
+
+/* Ensure each slide fills that height even without an image */
+.service-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;          /* match container */
+}
+
+/* If you want to show a generic “coming soon” text */
+.service-swiper .swiper-slide::before {
+  content: "Image Placeholder";
+  color: #888;
+  font-size: 0.9rem;
+}

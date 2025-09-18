@@ -9,12 +9,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome (icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Hk5fV3FURi6I7u3s5FzQk0t2M3e4f1qF1nq2C1f3w8R3s2Hk5g6Jm8V9kjz4xwZ1G2Y3f4d5k6l7m8n9oQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" ... />
 
-  <!-- Site stylesheet -->
+<!-- Site stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Swiper slider (for service image galleries) -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 <body>
+
   <!-- ===== HEADER ===== -->
   <header class="site-header">
     <div class="container header-inner">
@@ -35,7 +44,6 @@
         <ul class="nav-list">
           <li><a href="#About">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
           <li><a href="#contacts">Contacts</a></li>
           <li><a href="#clients">Clients</a></li>
         </ul>
@@ -49,8 +57,9 @@
     <section class="hero container">
       <div class="hero-content">
         <h1>We Plan & Run Your Conferences and Events</h1>
-        <p>From intimate celebrations to large-scale brand activationswe plan, design and execute with precision and elegance.</p>
-        <a href="#services" class="btn btn-primary">Our Services</a>
+        <p>From intimate celebrations to large-scale brand activations, we plan,design and execute with precision and elegance.</p>
+        <a href="#contacts" class="btn btn-primary">Available</a>
+
       </div>
       <div class="hero-image" aria-hidden="true">
         <!-- Decorative placeholder -->
@@ -58,139 +67,128 @@
       </div>
     </section>
 
-    <!-- Services grid -->
-    <section id="services" class="services container">
-      <header class="section-header">
-        <h2>Services</h2>
-        <p>Comprehensive event planning and production services tailored to your needs.</p>
-      </header>
+    <section id="about" class="about container">
+  <header class="section-header">
+    <h2>About Elegant Events</h2>
+    <p>
+      Elegant Events is a full-service event-planning agency dedicated to
+      creating memorable experiences with style and precision.
+    </p>
+  </header>
 
-      <!-- Services list (grid) -->
-      <div class="services-grid">
-        <!-- Note: copy/paste the card block to add more services -->
-        <article class="service-card">
-          <figure class="service-media">
-            <img src="https://via.placeholder.com/600x400?text=Weddings" alt="Weddings example placeholder" />
-          </figure>
-          <div class="service-body">
-            <h3><i class="fa-solid fa-ring"></i> Weddings</h3>
-            <p>Bespoke wedding planning — venue sourcing, design, coordination and day-of management for a flawless celebration.</p>
-          </div>
-        </article>
+  <div class="about-content">
+    <!-- What We Offer -->
+    <h3 class="subhead">What We Offer</h3>
+    <ul class="about-services">
+      <li>Full-service event planning</li>
+      <li>Creative décor & styling</li>
+      <li>Venue sourcing & vendor management</li>
+      <li>On-site coordination & logistics</li>
+    </ul>
 
-        <article class="service-card">
-          <figure class="service-media">
-            <img src="https://via.placeholder.com/600x400?text=Corporate+Events" alt="Corporate events placeholder" />
-          </figure>
-          <div class="service-body">
-            <h3><i class="fa-solid fa-briefcase"></i> Corporate Events</h3>
-            <p>Corporate conferences, client receptions and team-building experiences designed to achieve your objectives.</p>
-          </div>
-        </article>
+    <!-- Types of Events -->
+    <h3 class="subhead">Types of Events We Cover</h3>
+    <ul class="about-services">
+      <li>Weddings & Receptions</li>
+      <li>Corporate Events & Conferences</li>
+      <li>Product Launches & Brand Activations</li>
+      <li>Birthdays & Private Parties</li>
+      <li>Concerts & Live Performances</li>
+      <li>Funerals & Memorial Services</li>
+    </ul>
+  </div>
+</section>
 
-        <article class="service-card">
-          <figure class="service-media">
-            <img src="https://via.placeholder.com/600x400?text=Meetings+%26+Conferences" alt="Meetings and conferences placeholder" />
-          </figure>
-          <div class="service-body">
-            <h3><i class="fa-solid fa-chalkboard-user"></i> Meetings &amp; Conferences</h3>
-            <p>Full production and logistical support to make meetings impactful — AV, staging, attendee experience and more.</p>
-          </div>
-        </article>
+<!-- ===== SERVICES ===== -->
+<section id="services" class="container services-list">
+  <header class="section-header">
+    <h2>Our Services</h2>
+    <p>Each service includes a showcase of our recent work.</p>
+  </header>
 
-        <article class="service-card">
-          <figure class="service-media">
-            <img src="https://via.placeholder.com/600x400?text=Product+Launches" alt="Product launches placeholder" />
-          </figure>
-          <div class="service-body">
-            <h3><i class="fa-solid fa-rocket"></i> Product Launches</h3>
-            <p>Launch strategy and immersive events that create buzz and amplify your product's story.</p>
-          </div>
-        </article>
-
-        <article class="service-card">
-          <figure class="service-media">
-            <img src="https://via.placeholder.com/600x400?text=Award+Nights+%26+Gala+Dinners" alt="Award nights placeholder" />
-          </figure>
-          <div class="service-body">
-            <h3><i class="fa-solid fa-trophy"></i> Award Nights &amp; Gala Dinners</h3>
-            <p>Elegant gala design, run-of-show, guest management and bespoke décor to celebrate excellence.</p>
-          </div>
-        </article>
-
-        <article class="service-card">
-          <figure class="service-media">
-            <img src="https://via.placeholder.com/600x400?text=Birthdays" alt="Birthdays placeholder" />
-          </figure>
-          <div class="service-body">
-            <h3><i class="fa-solid fa-cake-candles"></i> Birthdays</h3>
-            <p>Personalized birthday experiences for all ages — themed décor, entertainment and event coordination.</p>
-          </div>
-        </article>
-
-        <article class="service-card">
-          <figure class="service-media">
-            <img src="https://via.placeholder.com/600x400?text=Concerts" alt="Concerts placeholder" />
-          </figure>
-          <div class="service-body">
-            <h3><i class="fa-solid fa-music"></i> Concerts</h3>
-            <p>Live event production — staging, sound, lighting and artist logistics for memorable performances.</p>
-          </div>
-        </article>
-
-        <article class="service-card">
-          <figure class="service-media">
-            <img src="https://via.placeholder.com/600x400?text=Receptions+%26+Decorations" alt="Receptions and decorations placeholder" />
-          </figure>
-          <div class="service-body">
-            <h3><i class="fa-solid fa-seedling"></i> Receptions &amp; Decorations</h3>
-            <p>Creative décor, floral design and atmosphere curation to set the tone for your event.</p>
-          </div>
-        </article>
-
-        <article class="service-card">
-          <figure class="service-media">
-            <img src="https://via.placeholder.com/600x400?text=Baby+Showers" alt="Baby showers placeholder" />
-          </figure>
-          <div class="service-body">
-            <h3><i class="fa-solid fa-baby"></i> Baby Showers</h3>
-            <p>Sweet, thoughtful and stress-free baby shower planning — themes, games and gift coordination.</p>
-          </div>
-        </article>
-
-        <article class="service-card">
-          <figure class="service-media">
-            <img src="https://via.placeholder.com/600x400?text=Brand+Activation" alt="Brand activation placeholder" />
-          </figure>
-          <div class="service-body">
-            <h3><i class="fa-solid fa-bullhorn"></i> Brand Activation</h3>
-            <p>Strategic activations and experiential marketing that grow brand awareness and customer engagement.</p>
-          </div>
-        </article>
-
-        <article class="service-card">
-          <figure class="service-media">
-            <img src="https://via.placeholder.com/600x400?text=Funerals" alt="Funerals placeholder" />
-          </figure>
-          <div class="service-body">
-            <h3><i class="fa-solid fa-cross"></i> Funerals</h3>
-            <p>Compassionate, dignified planning and coordination during sensitive times, handled respectfully and professionally.</p>
-          </div>
-        </article>
-
+  <!-- Service Item -->
+  <article class="service-item">
+    <h3>P.A System (DJ, MC and Sound)</h3>
+    <div class="swiper service-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/pa1.jpg" alt="PA system setup 1"></div>
+        <div class="swiper-slide"><img src="images/pa2.jpg" alt="PA system setup 2"></div>
+        <div class="swiper-slide"><img src="images/pa3.jpg" alt="PA system setup 3"></div>
       </div>
-    </section>
+      <div class="swiper-pagination"></div>
+    </div>
+  </article>
 
-    <!-- Projects placeholder -->
-    <section id="projects" class="projects container">
-      <header class="section-header">
-        <h2>Projects</h2>
-        <p>Selected past projects and case studies — coming soon. (Replace with gallery or project cards.)</p>
-      </header>
-      <!-- Minimal placeholder -->
-      <div class="placeholder">Project gallery or case studies can be placed here.</div>
-    </section>
+  <article class="service-item">
+    <h3>Videography, Photography & Livestreaming</h3>
+    <div class="swiper service-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/video1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/video2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/video3.jpg" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </article>
 
+  <article class="service-item">
+    <h3>On-site Catering</h3>
+    <div class="swiper service-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/catering1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/catering2.jpg" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </article>
+
+  <article class="service-item">
+    <h3>Complete Tent & Seating Solutions</h3>
+    <div class="swiper service-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/tent1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/tent2.jpg" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </article>
+
+  <article class="service-item">
+    <h3>Event Décor Services</h3>
+    <div class="swiper service-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/decor1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/decor2.jpg" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </article>
+
+  <article class="service-item">
+    <h3>Custom Cake Design</h3>
+    <div class="swiper service-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/cake1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/cake2.jpg" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </article>
+
+  <article class="service-item">
+    <h3>Professional Makeup Services</h3>
+    <div class="swiper service-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/makeup1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/makeup2.jpg" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </article>
+</section>
+
+
+  
     <!-- Contact CTA -->
     <section id="contact" class="contact container">
       <header class="section-header">
@@ -247,6 +245,21 @@
 
   <!-- Minimal JS for mobile nav and small interactions -->
   <script src="script.js"></script>
+
+  <!-- Step 4 – Swiper initialization -->
+<script>
+  document.querySelectorAll('.service-swiper').forEach(function (slider) {
+    new Swiper(slider, {
+      loop: true,
+      autoplay: { delay: 3000 },
+      pagination: {
+        el: slider.querySelector('.swiper-pagination'),
+        clickable: true
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
 
