@@ -299,6 +299,44 @@ body{
   color:var(--muted);
   border:1px dashed rgba(27,27,31,0.04);
 }
+/* PLAN EVENTS */
+.event {
+  width: 330px;
+  margin: 10% auto;
+  padding: 30px 20px;
+  background: lightsalmon;
+  border-radius: 10px;
+  box-shadow: 0 0 0 10px rgb(255,99, 71, .2), 15px 15px 20px rgb(0, 0, 0, .1);
+}
+
+.event h3 {
+  text-align: center ;
+  margin-bottom: 5px;
+}
+.event .input {
+  width: 100%;
+  display: flex;
+  padding: 3px;
+  border: 1px;
+  border-radius:2px ;
+  gap: 5px;
+}
+.event .input input {
+  padding: 8px 18px ;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+.event .input button {
+  padding: 8px 12px;
+  width: 120px;
+  outline: none;
+  border: none;
+  background: #19f;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 /* ---------- Footer ---------- */
 .site-footer{
@@ -439,3 +477,140 @@ button:focus-visible {
   color: #888;
   font-size: 0.9rem;
 }
+
+
+/* === CLIENT MANAGEMENT FORM STYLING === */
+.client-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #4bcfcf;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-family: Arial, sans-serif;
+}
+
+.container header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.container .subtitle {
+  color: #110b0b;
+  font-size: 0.95rem;
+}
+
+.progress {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Step headings */
+.step h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* Options Grid */
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.card-option {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  background: #061a10;
+  transition: 0.3s;
+}
+
+.card-option:hover {
+  background: #0d9292;
+  border-color: #66a6ff;
+}
+
+.card-option input {
+  display: none;
+}
+
+.card-option .label {
+  font-size: 0.95rem;
+}
+
+/* Service list */
+.service-list label {
+  display: block;
+  margin: 0.7rem 0;
+  font-size: 0.95rem;
+}
+
+/* Quick controls */
+.quick-controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quick-controls input {
+  width: 70px;
+  padding: 0.3rem;
+  text-align: center;
+}
+
+.estimated {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form inputs */
+.step label {
+  display: block;
+  margin: 0.8rem 0;
+  font-size: 0.95rem;
+}
+
+.step input, 
+.step textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Summary */
+.summary-box {/*Not yet finished styling the summary*/
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* Confirmation message */
+.submit-msg {/*Not yet finished structuring the html*/
+  margin-top: 1rem;
+  font-weight: bold;
+  color: green;
+}
+
+
+

@@ -43,9 +43,9 @@
       <nav id="primaryNav" class="primary-nav" aria-label="Primary navigation">
         <ul class="nav-list">
           <li><a href="#About">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contacts">Contacts</a></li>
-          <li><a href="#clients">Clients</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Contacts">Contacts</a></li>
+          <li><a href="#Clients">Clients</a></li>
         </ul>
       </nav>
     </div>
@@ -58,7 +58,7 @@
       <div class="hero-content">
         <h1>We Plan & Run Your Conferences and Events</h1>
         <p>From intimate celebrations to large-scale brand activations, we plan,design and execute with precision and elegance.</p>
-        <a href="#contacts" class="btn btn-primary">Available</a>
+        <a href="#Contacts" class="btn btn-primary">Available</a>
 
       </div>
       <div class="hero-image" aria-hidden="true">
@@ -100,7 +100,7 @@
 </section>
 
 <!-- ===== SERVICES ===== -->
-<section id="services" class="container services-list">
+<section id="Services" class="container services-list">
   <header class="section-header">
     <h2>Our Services</h2>
     <p>Each service includes a showcase of our recent work.</p>
@@ -187,49 +187,134 @@
   </article>
 </section>
 
+        <!----Clients ---->
 
-  
-    <!-- Contact CTA -->
-    <section id="contact" class="contact container">
-      <header class="section-header">
-        <h2>Contact</h2>
-        <p>Let’s plan something beautiful. Reach out for a tailored proposal.</p>
-      </header>
+    
+          <h1>Client Management</h1>
+    <div class="clients-grid" id="Clients">
+     <div class="my-clients">
+       <h1>Let’s Organise Your Upcoming Event</h1>
+       <form action="" class="event">
+        <h3>Select The Event You Want To Plan</h3>
+        <div class="input">
+          
+          <input type="search" placeholder="Search Events" required>
+          <button type="search">Search</button>
+        </div>
+       </form>
+     </div>
+     
 
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p><strong>Email:</strong> <a href="mailto:hello@elegantevents.example">hello@elegantevents.example</a></p>
-          <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-          <p><strong>Location:</strong> Nairobi, Kenya</p>
 
-          <div class="social-links" aria-label="Social links">
-            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+
+    </div>
+
+    <!--CLIENT MANAGEMENT-->
+
+    <!--Please dont change any code for now till we create another page for the client management steps for the oranising of the event and the automatic configuration of how the user data will be sent to us -->
+
+  <main class="client-container">
+    <header>
+      <h1>Elegant Plans</h1>
+      <p class="subtitle">Plan your event online. Choose services, enter details, confirm — we handle the rest.</p>
+    </header>
+
+    <section class="card">
+      <div id="progress" class="progress">Step <span id="step-number">1</span> of 5</div>
+
+      <!-- STEP 1 - Event Type -->
+      <form id="planner-form">
+        <div class="step" data-step="1">
+          <h2>What type of event?</h2>
+          <div class="options-grid">
+            <label class="card-option">
+              <input type="radio" name="eventType" value="Wedding" />
+              <div class="label">Wedding 💍</div>
+            </label>
+            <label class="card-option">
+              <input type="radio" name="eventType" value="Birthday" />
+              <div class="label">Birthday 🎂</div>
+            </label>
+            <label class="card-option">
+              <input type="radio" name="eventType" value="Graduation" />
+              <div class="label">Graduation 🎓</div>
+            </label>
+            <label class="card-option">
+              <input type="radio" name="eventType" value="Corporate" />
+              <div class="label">Corporate 🏢</div>
+            </label>
+            <label class="card-option">
+              <input type="radio" name="eventType" value="Other" />
+              <div class="label">Other ✨</div>
+            </label>
           </div>
         </div>
 
-        <form class="contact-form" action="#" method="post" aria-label="Contact form (demo)">
-          <label>
-            <span class="label-text">Name</span>
-            <input type="text" name="name" placeholder="Your full name" required />
-          </label>
+        <!-- STEP 2 - Services -->
+        <div class="step" data-step="2">
+          <h2>Select services you need</h2>
+          <div class="service-list">
+            <label><input type="checkbox" name="services" value="Tents" data-price="20000" /> Tents — Ksh 20,000</label>
+            <label><input type="checkbox" name="services" value="Photographer" data-price="15000" /> Photographer — Ksh 15,000</label>
+            <label><input type="checkbox" name="services" value="Videographer" data-price="18000" /> Videographer — Ksh 18,000</label>
+            <label><input type="checkbox" name="services" value="Catering" data-price="25000" /> Catering — Ksh 25,000</label>
+            <label><input type="checkbox" name="services" value="DJ" data-price="8000" /> DJ / Entertainment — Ksh 8,000</label>
+            <label><input type="checkbox" name="services" value="Decoration" data-price="10000" /> Decoration — Ksh 10,000</label>
+          </div>
 
-          <label>
-            <span class="label-text">Email</span>
-            <input type="email" name="email" placeholder="you@example.com" required />
-          </label>
+          <div class="quick-controls">
+            <label>
+              Guests:
+              <input type="number" id="guest-count" name="guests" min="1" value="50" />
+            </label>
+            <div class="estimated">Estimated cost: <strong id="estimated-cost">Ksh 0</strong></div>
+          </div>
+        </div>
 
-          <label>
-            <span class="label-text">Message</span>
-            <textarea name="message" rows="5" placeholder="Tell us about your event…" required></textarea>
+        <!-- STEP 3 - Event Details -->
+        <div class="step" data-step="3">
+          <h2>Event details</h2>
+          <label>Event Date
+            <input type="date" name="date" id="event-date" required />
           </label>
+          <label>Event Time
+            <input type="time" name="time" id="event-time" required />
+          </label>
+          <label>Venue or Location
+            <input type="text" name="venue" id="venue" placeholder="Venue name or address" required />
+          </label>
+          <label>Special notes (optional)
+            <textarea name="notes" id="notes" rows="3" placeholder="Any requests or details"></textarea>
+          </label>
+        </div>
 
-          <button class="btn btn-secondary" type="submit">Send message</button>
-        </form>
-      </div>
-    </section>
-  </main>
+        <!-- STEP 4 - Contact Info -->
+        <div class="step" data-step="4">
+          <h2>Your contact information</h2>
+          <label>Full name
+            <input type="text" name="name" id="client-name" required />
+          </label>
+          <label>Email
+            <input type="email" name="email" id="client-email" required />
+          </label>
+          <label>Phone
+            <input type="tel" name="phone" id="client-phone" required placeholder="+2547..." />
+          </label>
+        </div>
+
+        <!-- STEP 5 - Summary & Confirm -->
+        <div class="step" data-step="5">
+          <h2>Summary</h2>
+          <div id="summary" class="summary-box">
+            <!-- Summary will be injected here -->
+          </div>
+
+          <div id="submit-msg" class="submit-msg" aria-live="polite"></div>
+        </div>
+
+       
+
+
 
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer">

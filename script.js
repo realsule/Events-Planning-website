@@ -22,3 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+ <script>
+      function manageClient(name) {
+        // Implement your client management logic here
+        console.log(`Managing client: ${name}`);
+      }
+    </script>
